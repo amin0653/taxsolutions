@@ -1,0 +1,222 @@
+/* ---------- General Reset for Services Page ---------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---------- Header ---------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #1e3a8a;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo a {
+    color: #fbbf24;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header .logo a:hover {
+    color: #fff;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    background-color: #fbbf24;
+    color: #1e3a8a;
+    transform: translateY(-2px);
+}
+
+/* ---------- Services Hero Section ---------- */
+.hero {
+    background-color: #1e3a8a;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #f1f1f1;
+}
+
+/* ---------- Services Cards Section ---------- */
+.services {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.2em;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.services p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 25px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.card i {
+    color: #0a3d62;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    color: #1e3a8a;
+}
+
+.card p {
+    font-size: 0.95em;
+    color: #555;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+/* ---------- Contact CTA Section ---------- */
+.contact-cta {
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    color: #1e3a8a;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 15px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.contact-cta h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.contact-cta h2 span {
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+.contact-cta p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.contact-cta .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact-cta .cta-btn i {
+    margin-right: 10px;
+    font-size: 1.3em;
+}
+
+.contact-cta .cta-btn:hover {
+    background-color: #128C7E;
+    transform: translateY(-3px);
+}
+
+
+/* ---------- WhatsApp Floating Button ---------- */
+.contact-btn-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #25d366, #128C7E);
+    color: white;
+    padding: 14px 22px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    font-size: 1.05em;
+}
+
+.contact-btn-fixed i {
+    font-size: 1.4em;
+}
+
+.contact-btn-fixed:hover {
+    transform: translateY(-3px) scale(1.05);
+}
+/* ---------- Responsive ---------- */
+@media(max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header nav a {
+        margin-left: 0;
+    }
+}

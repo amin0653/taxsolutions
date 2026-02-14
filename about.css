@@ -1,0 +1,179 @@
+/* ---------- General Reset ---------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---------- Body ---------- */
+body {
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* ---------- Header ---------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #1e3a8a;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #fbbf24;
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fbbf24;
+    transition: color 0.3s ease;
+}
+
+header .logo:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+header nav a {
+    color: #fff;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #fbbf24;
+    color: #1e3a8a;
+    transform: translateY(-2px);
+}
+
+/* ---------- Hero-like Content Section ---------- */
+.content {
+    max-width: 900px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 40px 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.content h2 {
+    font-size: 3rem;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.content h3 {
+    font-size: 2rem;
+    margin-top: 40px;
+    color: #1e3a8a;
+}
+
+/* ---------- Map Box ---------- */
+.map-box {
+    margin-top: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border: 4px solid #fbbf24;
+}
+
+
+/* ---------- WhatsApp Floating Button ---------- */
+.contact-btn-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #25d366, #128C7E);
+    color: white;
+    padding: 14px 22px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    font-size: 1.05em;
+}
+
+.contact-btn-fixed i {
+    font-size: 1.4em;
+}
+
+.contact-btn-fixed:hover {
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header nav a {
+        margin-left: 0;
+    }
+
+    .content h2 {
+        font-size: 2.2rem;
+    }
+
+    .content h3 {
+        font-size: 1.8rem;
+    }
+
+    .map-box iframe {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h2 {
+        font-size: 1.8rem;
+    }
+
+    .content h3 {
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}
+.about-image-frame {
+    width: 150px;
+    height: 180px;
+    margin: 0 auto 25px auto;
+    border: 4px solid #1e3a8a;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.about-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
